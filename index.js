@@ -9,7 +9,7 @@ app.post('/pushhook', async(req, res) => {
   const data = req.body
   try {
     const notify = new lineapi.Notify({
-        token: ['lWkLPSc9FrMRJsjkmvssmT3W1P9N0FJaaEDRz0weOSN']
+        token: 'lWkLPSc9FrMRJsjkmvssmT3W1P9N0FJaaEDRz0weOSN'
     })
     notify.send({
       message: data.user_username + '\uDBC0\uDCA4'+'\uDBC0\uDCA4'+'\uDBC0\uDCA4'
